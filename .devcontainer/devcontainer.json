@@ -1,0 +1,272 @@
+Here is a clean, modern, fully responsive single-page sales template built with clean HTML5 and Tailwind CSS (loaded via CDN so you can preview it instantly in any browser).
+
+Save the code below as `index.html` and open it in your browser.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Order Flow & CRT Dashboard | TradingView Indicator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#10B981',
+                            greenHover: '#059669',
+                            dark: '#0B0F17',
+                            card: '#161F2E',
+                            accent: '#3B82F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-green selection:text-black">
+
+    <!-- HERO SECTION -->
+    <header class="relative overflow-hidden pt-16 pb-20 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-brand-green uppercase bg-brand-green/10 border border-brand-green/20 rounded-full">
+                Attention Day Traders & Swing Traders
+            </span>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                Stop Guessing Who Is In Control.<br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-400">
+                    Trade With Institutional Order Flow Precision.
+                </span>
+            </h1>
+            <p class="text-base sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                The first TradingView dashboard built exclusively around Candle Range Theory (CRT), Cumulative Volume Delta Divergence, and High-Timeframe Liquidity Sweeps.
+            </p>
+
+            <!-- VIDEO EMBED PLACEHOLDER -->
+            <div class="max-w-4xl mx-auto bg-brand-card border border-gray-800 rounded-2xl p-2 sm:p-4 shadow-2xl shadow-brand-green/5 mb-8">
+                <div class="relative aspect-video rounded-xl bg-gray-950 flex flex-col items-center justify-center border border-gray-800/80 group cursor-pointer overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-80"></div>
+                    
+                    <!-- Play Button Visual -->
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-brand-green text-black rounded-full flex items-center justify-center shadow-lg shadow-brand-green/30 group-hover:scale-110 transition-transform duration-300 z-10">
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 fill-current ml-1" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="mt-4 text-xs sm:text-base font-semibold text-gray-200 z-10 tracking-wide">
+                        [ Watch 2-Min Demo: See How The Dashboard Spots Traps In Real-Time ]
+                    </p>
+                </div>
+            </div>
+
+            <a href="#pricing" class="inline-flex items-center justify-center px-8 py-4 text-base sm:text-lg font-bold text-black bg-brand-green hover:bg-brand-greenHover rounded-xl shadow-lg shadow-brand-green/25 transition-all duration-200 hover:-translate-y-0.5">
+                Get Instant Dashboard Access
+            </a>
+        </div>
+    </header>
+
+    <!-- THE PROBLEM SECTION -->
+    <section class="py-20 border-b border-gray-800/60 bg-gray-950/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-center text-white mb-12">
+                Are You Tired Of Getting Trapped At The Highs & Lows?
+            </h2>
+
+            <div class="space-y-4">
+                <div class="bg-brand-card/60 border border-red-500/20 p-5 sm:p-6 rounded-xl flex items-start space-x-4">
+                    <div class="text-red-400 text-xl font-bold">✕</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">Buying Breakouts Right Into Heavy Resistance</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">You see momentum pushing higher, buy at the market, and watch price instantly reverse back into your stop loss.</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card/60 border border-red-500/20 p-5 sm:p-6 rounded-xl flex items-start space-x-4">
+                    <div class="text-red-400 text-xl font-bold">✕</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">Chasing Weak Signals In Middle-of-Range Noise</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">You take trades in the middle of nowhere without checking if higher-timeframe liquidity is present.</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card/60 border border-red-500/20 p-5 sm:p-6 rounded-xl flex items-start space-x-4">
+                    <div class="text-red-400 text-xl font-bold">✕</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">Missing The Reversal Until It’s Too Late</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">You see a massive move happen, but missed the subtle Delta Divergence that signaled smart money was absorbing orders.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-400 mt-10 text-base sm:text-lg">
+                <strong class="text-white">The market isn't broken—your visual workflow is.</strong> Trying to manage 4 timeframes, order flow delta, daily wicks, and weekly reference points across multiple tabs causes analysis paralysis.
+            </p>
+        </div>
+    </section>
+
+    <!-- THE SOLUTION & FEATURES SECTION -->
+    <section class="py-20 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Introducing: The ICT Order Flow & CRT Execution Dashboard
+                </h2>
+                <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+                    An all-in-one institutional execution engine for TradingView that condenses multi-timeframe analysis into one real-time control center.
+                </p>
+            </div>
+
+            <!-- DASHBOARD PREVIEW UI -->
+            <div class="mb-16 max-w-xl mx-auto bg-gray-950 border border-gray-800 rounded-xl p-4 font-mono text-xs sm:text-sm shadow-2xl">
+                <div class="grid grid-cols-2 gap-2 border-b border-gray-800 pb-2 mb-2 text-yellow-400 font-bold">
+                    <span>Filter Mode</span>
+                    <span class="text-brand-green">DASHBOARD ONLY</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 border-b border-gray-800 pb-2 mb-2">
+                    <span class="text-yellow-400 font-bold">EXECUTION BIAS</span>
+                    <span class="bg-emerald-600/30 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/40 font-bold text-center">STRONG BUY (HTF Sweep + Div)</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 border-b border-gray-800 pb-2 mb-2">
+                    <span class="text-gray-300">HTF Level Status</span>
+                    <span class="bg-teal-600/30 text-teal-300 px-2 py-0.5 rounded border border-teal-500/40 text-center">KEY LOW SWEPT</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 border-b border-gray-800 pb-2 mb-2">
+                    <span class="text-gray-300">Delta Divergence</span>
+                    <span class="bg-emerald-600/30 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/40 text-center">Bullish Delta Div</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 border-b border-gray-800 pb-2 mb-2">
+                    <span class="text-gray-300">4HR CRT State</span>
+                    <span class="bg-green-600/30 text-green-300 px-2 py-0.5 rounded border border-green-500/40 text-center">Bullish (Upper 25%)</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <span class="text-gray-300">1HR CRT State</span>
+                    <span class="bg-teal-600/30 text-teal-300 px-2 py-0.5 rounded border border-teal-500/40 text-center">Discount Hold (&gt;50%)</span>
+                </div>
+            </div>
+
+            <!-- FEATURES GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">🎯</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Execution Bias Engine</h3>
+                    <p class="text-gray-400 text-sm">Instantly displays high-confluence setups (<code class="text-brand-green">STRONG BUY</code> / <code class="text-red-400">STRONG SELL</code>) only when HTF levels, Delta Divergence, and CRT align.</p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">🛡️</div>
+                    <h3 class="text-lg font-bold text-white mb-2">No-Noise Filtering</h3>
+                    <p class="text-gray-400 text-sm">Suppresses low-probability, mid-range signals—focusing strictly on Previous Daily High/Low (PDH/PDL) and Previous Weekly High/Low (PWH/PWL) sweeps.</p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">📊</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Multi-Timeframe CRT Range Tracking</h3>
+                    <p class="text-gray-400 text-sm">Monitors the 50% Equilibrium and 25%/75% range boundaries across 1HR, 4HR, Daily, and Weekly candles.</p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">⚡</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Cumulative Volume Delta Divergence</h3>
+                    <p class="text-gray-400 text-sm">Detects institutional absorption in real-time when price makes a new extreme but delta fails to follow.</p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">🗓️</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Built-in ICT TGIF Model</h3>
+                    <p class="text-gray-400 text-sm">Automatically flags Friday mean-reversion profit-taking setups back toward weekly range equilibrium.</p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-gray-800">
+                    <div class="text-2xl mb-3">⚙️</div>
+                    <h3 class="text-lg font-bold text-white mb-2">One-Click Trading Presets</h3>
+                    <p class="text-gray-400 text-sm">Seamlessly toggle between Day Trading Mode (4H/1H CRT) and Swing Trading Mode (Weekly/Daily CRT) in settings inputs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-STEP PROCESS -->
+    <section class="py-20 border-b border-gray-800 bg-gray-950/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-16">
+                The 3-Step Execution Process
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative bg-brand-card p-6 rounded-xl border border-gray-800 text-left">
+                    <span class="text-4xl font-black text-brand-green/20 absolute top-4 right-4">01</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Wait for HTF Sweep</h3>
+                    <p class="text-gray-400 text-sm">The dashboard monitors PDH, PDL, PWH, and PWL in real-time for liquidity sweeps.</p>
+                </div>
+
+                <div class="relative bg-brand-card p-6 rounded-xl border border-gray-800 text-left">
+                    <span class="text-4xl font-black text-brand-green/20 absolute top-4 right-4">02</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Confirm Delta Div</h3>
+                    <p class="text-gray-400 text-sm">Ensure Cumulative Volume Delta flags institutional absorption at the swept level.</p>
+                </div>
+
+                <div class="relative bg-brand-card p-6 rounded-xl border border-gray-800 text-left">
+                    <span class="text-4xl font-black text-brand-green/20 absolute top-4 right-4">03</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Execute on Bias</h3>
+                    <p class="text-gray-400 text-sm">Enter when Execution Bias flips to STRONG BUY or STRONG SELL as CRT holds range.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Get Lifetime Access To The Indicator</h2>
+            <p class="text-gray-400 mb-12">One-time payment. Instant delivery to your TradingView account.</p>
+
+            <div class="bg-brand-card border-2 border-brand-green/50 rounded-2xl p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-12 -top-12 bg-brand-green/10 w-40 h-40 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-4xl sm:text-6xl font-black text-white mb-2">$197</div>
+                <div class="text-sm font-semibold uppercase tracking-widest text-brand-green mb-8">One-Time Payment</div>
+
+                <ul class="space-y-4 text-left max-w-md mx-auto mb-10 text-gray-300 text-sm sm:text-base">
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Full Pine Script v5 Indicator Code (TradingView)</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Lifetime Updates &amp; Enhancements</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Day Trading &amp; Swing Trading Presets</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Complete PDF User Manual &amp; Setup Guide</span>
+                    </li>
+                </ul>
+
+                <button class="w-full py-4 text-base sm:text-lg font-bold text-black bg-brand-green hover:bg-brand-greenHover rounded-xl shadow-lg shadow-brand-green/25 transition-all duration-200">
+                    GET INSTANT ACCESS TO THE DASHBOARD
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-gray-800 text-center text-xs text-gray-500">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="mb-2">Risk Disclaimer: Trading foreign exchange, futures, and stocks carries a high level of risk and may not be suitable for all investors.</p>
+            <p>&copy; 2026 ICT Order Flow Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+```
